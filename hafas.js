@@ -96,7 +96,7 @@ async function getArrivals(departures) {
 
 async function checkDepartures() {
 	const filteredDepartures = await filterDepartures();
-	const filteredDepartures = await getArrivals(filterDepartures);
+	//const filteredDepartures = await getArrivals(filterDepartures);
 	for (let index = 0; index < filteredDepartures.length; index++) {
 		if (filteredDepartures[index].direction == "Hauptbahnhof") {
 			filteredDepartures[index].direction = await checkDetour(filteredDepartures[index].tripId, filteredDepartures[index].line);
