@@ -12,6 +12,7 @@ var app = express();
 const MAX_CHECK_DURATION = "10";
 exports.MAX_CHECK_DURATION = MAX_CHECK_DURATION;
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
